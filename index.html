@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlord Meeting</title>
+    <link rel="icon" href="./screenshots/fav.png">
+  </head>
+
+  <body>
+    <header>
+        <h1>Not-last Moonlord Meeting</h1>
+        <div class="meeting details">
+            <p><strong>Topic:</strong> Beating moonlord</p>
+            <p><strong>Date:</strong> Sunday, April 12, 2026</p>
+            <p><strong>Time:</strong> 9:00pm - 1:13am</p>
+            <p><strong>Location:</strong> <i>Terraria</i></p>
+        </div>
+    </header>
+
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#discussion">Discussion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Attendance</h2>
+            <ul>
+                <li>Sherma</li>
+                <li>Ribet</li>
+                <li>Satellamoon</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Agenda</h2>
+            <ol>
+                <li>Preparation</li>
+                <li>Spawn moonlord</li>
+                <li>Git Gud</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Discussion</h2>
+
+            <h3>Last meeting</h3>
+            <p> 
+                Fought <span class="boss">Golem</span>, and <span class="boss">Empress of Light</span>. 
+                Struggled to summon <span class="boss">Overgrown fish (Duke Fishron)</span> due to glitchy patch on the map.
+                <br>
+                Next meeting: Spawn <span class="boss">Moonlord</span> and beat him!
+            </p>
+            
+            <hr>
+
+            <h3>This meeting</h3>
+            <p> 
+                Figured out how to spawn <span class="boss">Fishron</span> and won.
+                Fought <span class="boss">Moonlord</span> and lost.
+                <br> 
+                Need to <em>git gud</em>.
+            </p>
+
+            <details>
+                <summary>Questions</summary>
+                <ul>
+                    <li>How do we git gud?</li>
+                    <li>What strategy should we use?</li>
+                    <li>Why does melee build have <strong>no damage</strong>?</li>
+                    <li>Why does mage build have <strong>no mobility</strong>?</li>
+                    <li>Do we <i>really</i> <em>need</em> <b>5</b> whips?</li>
+                </ul>
+            </details>
+
+            <h3>Battle Details</h3>
+                <div class="Battle Details">
+                    <p>
+                        <img src="./screenshots/Peak diagram.png" alt="Battle Diagram">
+                    </p>
+
+                    <p>
+                        <audio controls>
+                            <source src="./audio/battle-audio.mp3" type="audio/mpeg">
+                        </audio> 
+                    </p>
+
+                    <p>
+                        <video controls>
+                            <source src="./video/battle-video.mp4" type="video/mp4">
+                        </video>
+                    </p>
+                </div>
+        </section>
+    </main>
+
+    <form>
+        <h2>Feedback</h2>
+        <fieldset>
+            <input type="radio" id="Sherma" name="users">
+            <label for="Sherma">Sherma</label><br>
+
+            <input type="radio" id="Ribet" name="users">
+            <label for="Ribet">Ribet</label><br>
+
+            <input type="radio" id="Satellamoon" name="users">
+            <label for="Satellamoon">Satellamoon</label><br>
+        </fieldset>
+        <br>
+
+        <label for="wantclasses">What class do you want to play?</label><br>
+        <input list="classes" id="wantclasses" name="wantclasses" />
+        <datalist id="classes">
+            <option value="Melee"></option>
+            <option value="Ranged"></option>
+            <option value="Magic"></option>
+            <option value="Summoner"></option>
+        </datalist>
+        <br><br>
+
+        <label for="playclasses">What class do you play?</label><br>
+        <select id="playclasses" name="playclasses">
+            <option value="Melee">Melee</option>
+            <option value="Ranged">Ranged</option>
+            <option value="Magic">Magic</option>
+            <option value="Summoner">Summoner</option>
+        </select>
+        <br><br>
+
+        <label for="feedback">Please provide feedback on how git gud:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>Pleasehelpus</p>
+    </footer>
+
+  </body>
+</html>
