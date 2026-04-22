@@ -21,6 +21,10 @@ header{
     background-color: var(--bgcolor, #00ffff);
 }
 
+header h1 {
+    font-size: 2rem;
+}
+
 body{ /* long border */
     background-color: aliceblue;
     border-width: 3em;
@@ -52,11 +56,21 @@ nav ul {
     background-color: #f0f8ff;
 }
 
+main > section {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
 span.boss { color: darkred; }
 
 section:has(ol) { /* Agenda is a sticky note now */
     background-color: #fff9c4;
     padding: 5px;
+}
+
+h3 ~ p {
+    border-left: 3px solid hsl(160, 100%, 75%);
+    padding-left: 10px;
 }
 
 .Battle-Details {
@@ -112,6 +126,10 @@ fieldset {
     max-width: 100%;
 }
 
+input[type="radio"] {
+    accent-color: darkred;
+}
+
 #Satellamoon + label {color:pink}
 #Sherma + label {color:burlywood}
 #Ribet + label {color:black}
@@ -120,6 +138,10 @@ fieldset {
 #Ribet + label, 
 #Satellamoon + label {
     font-style: italic;
+}
+
+button { /* round button */
+    border-radius: 8px;
 }
 
 button:active { /* button in form lights navy when click */
