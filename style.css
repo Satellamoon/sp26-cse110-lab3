@@ -1,0 +1,164 @@
+/* adding google sans */
+@font-face {
+    font-family: "myFont";
+    src: url("fonts/GoogleSans-Italic-VariableFont_GRAD\,opsz\,wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url("fonts/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --bgcolor: rgb(255, 0, 0);
+}
+
+header{
+    background-color: var(--bgcolor, #00ffff);
+}
+
+body{ /* long border */
+    background-color: aliceblue;
+    border-width: 3em;
+    border-color: hsl(160, 100%, 75%);
+    border-style: solid;
+    font-family: "myFont", sans-serif;
+}
+
+h2 { /* long padding */
+    padding-top: 1vh;
+    padding-right: 0vh;
+    padding-bottom: 1vh;
+    padding-left: 0vh;
+    text-align: center;
+    border-bottom: solid 3px black;
+}
+
+nav ul li a:hover { /* changes color of the table of contents items */
+    color: rgb(175, 79, 79); 
+}
+
+nav ul {
+    display: flex;              
+    justify-content: space-evenly; 
+    align-items: center;          
+    gap: 20px;                    
+             
+    padding: 10px;
+    background-color: #f0f8ff;
+}
+
+span.boss { color: darkred; }
+
+section:has(ol) { /* Agenda is a sticky note now */
+    background-color: #fff9c4;
+    padding: 5px;
+}
+
+.Battle-Details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.Battle-Details p { /* long margin */
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    min-width: 200px;
+}
+
+/* careful of sizing / going off screen */
+.Battle-Details img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;   
+}
+
+video {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+form { /* short margin + padding + border */
+    margin: 1cm auto 1cm auto;
+    padding: .5mm 1em 4mm 1em;
+    border: solid 3px black;
+    max-width: 600px;
+}
+
+textarea { /* sizing issues */
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+fieldset {
+    display: inline;
+    margin: 0;
+    width: 50%;
+    min-width: 250px;
+    max-width: 100%;
+}
+
+#Satellamoon + label {color:pink}
+#Sherma + label {color:burlywood}
+#Ribet + label {color:black}
+
+#Sherma + label, 
+#Ribet + label, 
+#Satellamoon + label {
+    font-style: italic;
+}
+
+button:active { /* button in form lights navy when click */
+    background-color: navy;
+}
+
+section {
+    position: static;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: navy;
+    color: white;
+    p {
+        font-size: .7em;
+    }
+}
+
+* { box-sizing: border-box; }
+
+@media (max-width: 768px) {
+    body {
+        border-width: 1em; 
+    }
+
+    form {
+        margin: 1cm auto;
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Battle-Details {
+        gap: 20px;
+    }
+}
